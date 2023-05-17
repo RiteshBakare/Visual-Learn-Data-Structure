@@ -19,9 +19,50 @@ class DSGraph : Fragment() {
         binding = FragmentDSGraphBinding.inflate(layoutInflater,container,false)
 
 
+        binding.btnAnimation.setOnClickListener {
+            playAnimation()
+        }
+
 
         return binding.root
     }
 
+    private fun playAnimation() {
+
+        binding.treeA.visibility = View.VISIBLE
+
+        binding.treeA.animate().apply {
+            duration=1000
+            translationY(100f)
+        }.withEndAction {
+            binding.treeA.visibility= View.GONE
+            binding.treeB.visibility = View.VISIBLE
+            binding.treeB.animate().apply {
+                translationY(200f)
+                duration=1000
+            }.withEndAction {
+                binding.treeB.visibility = View.INVISIBLE
+                binding.treeC.visibility = View.VISIBLE
+                binding.treeC.animate().apply {
+                    translationY(200f)
+                    duration=2000
+
+                }.withEndAction {
+                    recreateFragment()
+                }
+
+            }
+        }
+
+
+    }
+    private fun recreateFragment() {
+        // Recreate the fragment
+        val fragmentManager = requireFragmentManager()
+        val fragmentTransaction = fragmentManager.beginTransaction()
+        fragmentTransaction.detach(this)
+        fragmentTransaction.attach(this)
+        fragmentTransaction.commit()
+    }
 
 }

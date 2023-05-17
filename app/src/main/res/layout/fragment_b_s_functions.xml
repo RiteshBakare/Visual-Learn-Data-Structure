@@ -1,14 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".BasicSyntax.BSFunctions">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        style="@style/DemoTextStyle"
-        android:text="My Functions"
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executing main() function"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
         />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/funAdd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/add_function"
+        android:layout_marginBottom="300dp"
+        />
+    <ImageView
+        android:id="@+id/funMain"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/function_main"
+        android:layout_marginTop="100dp"
+        />
+    <ImageView
+        android:id="@+id/funPointer"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/function_pointer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="80dp"
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/btn_play"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_margin="30sp"
+        android:elevation="22sp"
+        app:cardBackgroundColor="@color/dark_blue"
+        app:cardElevation="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="30sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="play"
+            android:textColor="@color/black"
+            android:textSize="22sp" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
