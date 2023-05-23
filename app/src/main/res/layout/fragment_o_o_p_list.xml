@@ -11,49 +11,129 @@
 
         >
 
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvClassesAndObject"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:background="@color/dark_blue"-->
+<!--                android:text="Classes and Object" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvInheritance"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:background="@color/dark_blue"-->
+<!--                android:text="Inheritance"-->
+
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvPolymorphism"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:background="@color/dark_blue"-->
+<!--                android:text="Polymorphism"-->
+
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvAbstraction"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:background="@color/dark_blue"-->
+<!--                android:text="Abstraction"-->
+
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvEncapsulation"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:background="@color/dark_blue"-->
+<!--                android:text="Encapsulation"-->
+
+<!--                />-->
+<!--        </LinearLayout>-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
-            <TextView
-                android:id="@+id/tvClassesAndObject"
-                style="@style/DemoTextStyle"
-                android:background="@color/dark_blue"
-                android:text="Classes and Object" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
 
-            <TextView
-                android:id="@+id/tvInheritance"
-                style="@style/DemoTextStyle"
-                android:background="@color/dark_blue"
-                android:text="Inheritance"
+                <ImageView
+                    android:id="@+id/tvClassesAndObject"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/classes_and_objects_card"
+                    android:layout_margin="10dp"
+                    />
 
-                />
+                <ImageView
+                    android:id="@+id/tvInheritance"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/inheritance_card" />
+            </LinearLayout>
 
-            <TextView
-                android:id="@+id/tvPolymorphism"
-                style="@style/DemoTextStyle"
-                android:background="@color/dark_blue"
-                android:text="Polymorphism"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <ImageView
+                    android:id="@+id/tvPolymorphism"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/polymorphism_card"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/tvAbstraction"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/abstraction_card"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
 
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <ImageView
+                    android:id="@+id/tvEncapsulation"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/encapsulation_card"
+                    android:layout_margin="10dp"
+                    />
 
-            <TextView
-                android:id="@+id/tvAbstraction"
-                style="@style/DemoTextStyle"
-                android:background="@color/dark_blue"
-                android:text="Abstraction"
+            </LinearLayout>
 
-                />
-
-            <TextView
-                android:id="@+id/tvEncapsulation"
-                style="@style/DemoTextStyle"
-                android:background="@color/dark_blue"
-                android:text="Encapsulation"
-
-                />
         </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>

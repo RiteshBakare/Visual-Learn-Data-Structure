@@ -10,43 +10,131 @@
         android:layout_height="match_parent"
 
         >
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvArray"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Array"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvLinkList"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Link List"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvStack"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Stack"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvQueue"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Queue"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvTrees"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Trees"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvGraph"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Graph"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
 
-            <TextView
-                android:id="@+id/tvArray"
-                style="@style/DemoTextStyle"
-                android:text="Array"
-                />
-            <TextView
-                android:id="@+id/tvLinkList"
-                style="@style/DemoTextStyle"
-                android:text="Link List"
-                />
-            <TextView
-                android:id="@+id/tvStack"
-                style="@style/DemoTextStyle"
-                android:text="Stack"
-                />
-            <TextView
-                android:id="@+id/tvQueue"
-                style="@style/DemoTextStyle"
-                android:text="Queue"
-                />
-            <TextView
-                android:id="@+id/tvTrees"
-                style="@style/DemoTextStyle"
-                android:text="Trees"
-                />
-            <TextView
-                android:id="@+id/tvGraph"
-                style="@style/DemoTextStyle"
-                android:text="Graph"
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+
+                <ImageView
+                    android:id="@+id/tvArray"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/array"
+                    android:layout_margin="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/tvLinkList"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/linked_list"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <ImageView
+                    android:id="@+id/tvStack"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/stack"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/tvQueue"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/queue"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <ImageView
+                    android:id="@+id/tvTrees"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/trees"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/tvGraph"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/graph"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+
         </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>

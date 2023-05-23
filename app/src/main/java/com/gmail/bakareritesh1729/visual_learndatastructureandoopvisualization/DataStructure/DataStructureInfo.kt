@@ -23,11 +23,11 @@ class DataStructureInfo : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        savedInstanceState: Bundle?,
     ): View? {
         binding = FragmentDataStructureInfoBinding.inflate(layoutInflater, container, false)
 
-        binding.tvInfo.setOnClickListener {
+        binding.btnVisual.setOnClickListener {
             navigateToNextScreen()
         }
 
@@ -39,8 +39,8 @@ class DataStructureInfo : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         topic = args.dsTopic
 
-        binding.tvInfo.text = topic
-
+        binding.tvTitle.text = topic
+        getContain()
     }
 
     private fun navigateToNextScreen() {
@@ -60,4 +60,23 @@ class DataStructureInfo : Fragment() {
         }
 
     }
+
+    private fun getContain() {
+
+        if (DataStructureList.Array == topic) {
+            binding.tvContain.setText(R.string.array_info)
+        } else if (DataStructureList.LinkList == topic) {
+            binding.tvContain.setText(R.string.link_list_info)
+        } else if (DataStructureList.Stack == topic) {
+            binding.tvContain.setText(R.string.stack_info)
+        } else if (DataStructureList.Queue == topic) {
+            binding.tvContain.setText(R.string.queue_info)
+        } else if (DataStructureList.Tree == topic) {
+            binding.tvContain.setText(R.string.tree_info)
+        } else if (DataStructureList.Graph == topic) {
+            binding.tvContain.setText(R.string.graph_info)
+        }
+
+    }
+
 }

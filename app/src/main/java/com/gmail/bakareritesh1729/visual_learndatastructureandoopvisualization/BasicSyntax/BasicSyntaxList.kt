@@ -47,10 +47,10 @@ class BasicSyntaxList : Fragment() {
                 val direction = BasicSyntaxListDirections.actionBasicSyntaxListToBasicSyntaxInfo(function)
                 findNavController().navigate(direction)
             }
-            tvSwitch.setOnClickListener {
-                val direction = BasicSyntaxListDirections.actionBasicSyntaxListToBasicSyntaxInfo(switch)
-                findNavController().navigate(direction)
-            }
+//            tvSwitch.setOnClickListener {
+//                val direction = BasicSyntaxListDirections.actionBasicSyntaxListToBasicSyntaxInfo(switch)
+//                findNavController().navigate(direction)
+//            }
         }
     }
 

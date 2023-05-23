@@ -27,9 +27,9 @@ class BasicSyntaxInfo : Fragment() {
     ): View? {
         binding = FragmentBasicSyntaxInfoBinding.inflate(layoutInflater, container, false)
 
-        binding.info.text = topic
+        binding.tvTitle.text = topic
 
-        binding.info.setOnClickListener {
+        binding.btnVisual.setOnClickListener {
             navigateToNextScreen()
         }
 
@@ -40,40 +40,26 @@ class BasicSyntaxInfo : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         topic = args.concept.toString()
 
-        binding.info.text = topic
+        binding.tvTitle.text = topic
 
         if (BasicSyntaxList.dataTypes == topic) {
-            Toast.makeText(
-                context?.applicationContext,
-                "This is My Topic $topic  Data Types ",
-                Toast.LENGTH_SHORT
-            ).show()
-        } else if (BasicSyntaxList.variables == topic) {
-            Toast.makeText(
-                context?.applicationContext,
-                "This is My Topic $topic Variable  ",
-                Toast.LENGTH_SHORT
-            ).show()
-        } else if (BasicSyntaxList.conditionals == topic) {
-            Toast.makeText(
-                context?.applicationContext,
-                "This is My Topic $topic Conditionals ",
-                Toast.LENGTH_SHORT
-            ).show()
-        } else if (BasicSyntaxList.loops == topic) {
-            Toast.makeText(
-                context?.applicationContext,
-                "This is My Topic $topic Loops ",
-                Toast.LENGTH_SHORT
-            ).show()
-        } else if (BasicSyntaxList.function == topic) {
-            Toast.makeText(
-                context?.applicationContext,
-                "This is My Topic $topic Function ",
-                Toast.LENGTH_SHORT
-            ).show()
+            binding.tvContain.setText(R.string.data_types)
         }
-
+        else if (BasicSyntaxList.variables == topic) {
+            binding.tvContain.setText(R.string.variables)
+        }
+        else if (BasicSyntaxList.conditionals == topic) {
+            binding.tvContain.setText(R.string.conditionals_info)
+        }
+        else if (BasicSyntaxList.loops == topic) {
+            binding.tvContain.setText(R.string.loops_info)
+        }
+        else if (BasicSyntaxList.function == topic) {
+            binding.tvContain.setText(R.string.function_info)
+        }
+        else if (BasicSyntaxList.switch == topic) {
+            binding.tvContain.setText(R.string.switch_info);
+        }
     }
 
     private fun navigateToNextScreen() {

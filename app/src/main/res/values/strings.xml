@@ -1,6 +1,178 @@
 <resources>
-    <string name="app_name">Visual-Learn Data Structure and OOP Visualization</string>
+    <string name="app_name">Visual-Learn Data Structure Visualization</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="welcome_nsign_in_to_continue">Welcome, \nSign In to Continue</string>
+
+    <string name="array_info">Definition: An array is a contiguous block of memory that stores elements of the same data type.\n \n
+        Declaration: In C++, you can declare an array using the following syntax : dataType arrayName[arraySize]; \n \n
+        Indexing: Array elements are accessed using zero-based indexing. The first element is at index 0, the second at index 1, and so on.\n \n
+        Size: The size of an array is determined at compile-time and is fixed for the duration of the program.\n \n
+        Initialization: Arrays can be initialised at the time of declaration or later using assignment statements or loops.\n \n
+        For example:
+        int numbers[] = {1, 2, 3, 4, 5}; // Initializes an array with values\n \n
+        Accessing Elements: You can access individual elements of an array using square brackets and the index. \n \n
+        For example:
+        Operations: Arrays support various operations,including:\n \n
+        Reading or modifying array elements\n \n
+        Traversing array elements using loops\n \n
+        Sorting and searching array elements\n \n
+        Copying and merging arrays\n \n
+        Memory Management: Array elements are stored in contiguous memory locations, allowing for efficient memory access and element retrieval.\n\n
+    </string>
+
+    <string name="link_list_info">
+        •	Concept:\n\n
+        	Linked List can be defined as collection of objects called nodes that are randomly stored in the memory.\n \n
+        	A node contains two fields i.e. data stored at that particular address and the pointer which contains the address of the next node in the memory.\n \n
+        	The last node of the list contains pointer to the null.\n \n
+        •	Types of linked list:
+                Following are the various flavours of linked list.\n \n
+        •	Simple Linked List − Item Navigation is forward only.\n \n
+        •	Doubly Linked List − Items can be navigated forward and backward way.\n \n
+        •	Circular Linked List − Last item contains link of the first element as next and and first element has link to last element as prev. \n \n
+            Following are the basic operations supported by a list.\n \n
+        	Insertion − add an element at the beginning of the list\n \n
+        	Deletion − delete an element at the beginning of the list.\n \n
+        	Display − displaying complete list.\n \n
+        	Search − search an element using given key. \n \n
+    </string>
+
+    <string name="stack_info">
+         <b>Concept</b>\n\n
+        ⦿  Stacks in Data Structures is a linear type of data structure that follows the <b>LIFO (Last-In-First-Out)</b> principle and allows insertion and deletion operations from one end of the stack data structure, that is top.\n
+        ⦿  it is a <b>linear data structure </b>\n
+        ⦿  Real life examples of stack are deck of cards, pile of books etc.\n
+        ⦿  The operation of inserting data inside a stack is known as <b>push</b> operation \n
+        ⦿  The operation of removing  data inside a stack is known as <b>pop</b> operation \n \n
+        <b>Operations on Stack</b>\n\n
+        ⦿ <b>push(int value)</b>: inserts the value at the top of the stack.\n
+        ⦿ <b>pop()</b> : removes the value from the top of the stack\n
+        ⦿ <b>peek()</b> : returns the value at the top of the stack\n
+        ⦿ <b>isEmpty()</b> : return 1 if the stack is empty i.e. top is equal to -1 else return 0\n
+        ⦿ <b>isFull() </b>: return 1 if the stack is full i.e. top is equal to max size of the stack else return 0\n\n
+        <b>NOTE:</b>\n\n
+        ⦿ When Stack is Empty condition is known as <b>Stack UnderFlow</b>
+        ⦿ When Stack is Full condition is known as <b>Stack OverFlow</b>\n\n\n
+    </string>
+
+    <string name="queue_info">
+    Definition: A queue is a data structure that follows the "first-in, first-out" (FIFO) principle, meaning the element added first is the first one to be removed.\n \n
+    Operations: Common operations performed on a queue include:\n \n
+    Enqueue: Adding an element to the end of the queue. \n \n
+    Dequeue: Removing the element from the front of the queue. \n \n
+    Peek: Viewing the element at the front of the queue without removing it. \n
+    IsEmpty: Checking if the queue is empty. \n \n
+
+    Implementation: Queues can be implemented using arrays or linked lists.\n \n
+    Array-based implementation: Requires a fixed-size array and keeps track of the front and rear indices. \n
+    Linked list implementation: Utilises a linked list structure where each node holds the data and a reference to the next node \n
+
+    Time complexity: The time complexity of queue operations is typically:\n \n
+    Enqueue: O(1) (constant time).\n \n
+    Dequeue: O(1) (constant time).\n \n
+    Peek: O(1) (constant time).\n \n
+    IsEmpty: O(1) (constant time).\n \n
+    </string>
+
+    <string name="tree_info">
+        ●	Definition: A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.\n \n
+        ●	Implementation: \n \n
+        ○	Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially.\n \n
+        In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size.\n \n
+        But, it is not acceptable in today\'s computational world. \n \n
+        ○	Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure \n \n
+
+        ●	Tree Terminologies:\n\n
+        ○	Node\n
+        ■	A node is an entity that contains a key or value and pointers to its child nodes.\n \n
+        ■	The last nodes of each path are called leaf nodes or external nodes that do not contain a link/pointer to child nodes.\n \n
+        ■	The node having at least a child node is called an internal node.\n \n
+
+        ○	Edge:\n
+        ■	It is the link between any two nodes.\n \n
+
+        ○	Root:\n
+        ■	It is the topmost node of a tree.\n \n
+
+        ○	Height of a Node:\n
+        ■	The height of a node is the number of edges from the node to the deepest leaf (ie. the longest path from the node to a leaf node).\n \n
+
+        ○	Depth of a Node: \n
+        ■	The depth of a node is the number of edges from the root to the node.\n \n
+
+        ○	Height of a Tree\n \n
+        ■	The height of a Tree is the height of the root node or the depth of the deepest node.\n \n
+
+
+    </string>
+
+    <string name="graph_info">
+        •	Concept:\n \n
+        A graph is an abstract data type (ADT) that consists of a set of objects that are connected to each other via links. These objects are called vertices and the links are called edges.\n \n
+        Usually, a graph is represented as G = {V, E}, where G is the graph space, V is the set of vertices and E is the set of edges. If E is empty, the graph is known as a forest.\n \n
+        •	Operations of Graph:\n \n
+        •	Depth First Search Traversal : \n \n
+        In this algorithm, an arbitrary node is chosen as the starting   point and the graph is traversed back and forth by marking unvisited adjacent nodes until all the vertices are mared.\n \n
+        It uses the stack data structure to keep track of the unvisited nodes. \n \n
+        •	Breadth First Search Traversal : \n \n
+        In this algorithm, an arbitrary node is chosen as the starting point and the graph is traversed by visiting the adjacent vertices on the same depth level and marking them until there is no vertex left.\n \n
+        The BFS traversal uses the queue data structure to keep track of the unvisited nodes.\n \n
+    </string>
+
+    <string name="data_types">
+        •	Definition: In C++, data types are declarations for variables. This determines the type and size of data associated with variables\n \n
+        boolean	\t\t1 byte	Stores true or false values \n \n
+        char	\t\t1 byte	Stores a single character/letter/number, or ASCII values\n \n
+        int	\t\t2 or 4 bytes	Stores whole numbers, without decimals\n \n
+        float	\t\t4 bytes	Stores fractional numbers, containing one or more decimals. Sufficient for storing 6-7 decimal digits\n \n
+        double	\t\t8 bytes	Stores fractional numbers, containing one or more decimals. Sufficient for storing 15 decimal digits\n \n
+
+    </string>
+
+    <string name="variables">
+
+    </string>
+
+    <string name="conditionals_info">
+
+    </string>
+
+    <string name="loops_info">
+        •	Concept:
+          In Programming, sometimes there is a need to perform some operation more than once or (say) n number of times. Loops come into use when we need to repeatedly execute a block of statements.\n \n
+        	for loop-\n \n
+        • A For loop is a repetition control structure that allows us to write a loop that is executed a specific number of times. The loop enables us to perform n number of steps together in one line.\n \n
+
+        •	Syntax:\n \n
+            for (initialization expr; test expr; update expr) {\n \n
+                \t\t// body of the loop\n \n
+                \t\t// statements we want to execute\n \n
+            }\n \n
+
+        	while loop-\n \n
+        • A while loop is a repetition control structure that allows us to write a loop that is executed while the condition is satisfied . wile loop enable us to perform steps while the conditions is true.\n \n
+
+        Syntax:\n \n
+        while(condition) { \n \n
+            \t\t // code
+        }\n\n
+    </string>
+
+    <string name="function_info">
+        <b>Concept</b>\n\n
+        ⦿ Functions are a self-contained block of code that performs a specific task and can be called from other parts of the program\n
+        ⦿ Functions can take input values, known as parameters or arguments, and use them to perform operations on the data.\n
+        ⦿ Functions can also return a value, which can be used in other parts of the program.\n
+        ⦿ Functions can be defined with or without parameters, depending on the needs of the program.\n
+        ⦿ A function can be called multiple times from different parts of the program, making it a reusable and modular component of the code.\n
+        ⦿ Functions can be used to simplify complex tasks by breaking them down into smaller, more manageable tasks.\n
+        ⦿ Functions can also make code easier to read and maintain by grouping related code together and making the code more organized.\n
+        ⦿ Functions can be declared within other functions, which allows for the creation of more complex programs.\n
+    </string>
+
+    <string name="switch_info">
+
+    </string>
+
 </resources>

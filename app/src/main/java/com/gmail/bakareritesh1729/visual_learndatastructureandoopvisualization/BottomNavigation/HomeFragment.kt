@@ -34,10 +34,10 @@ class HomeFragment : Fragment() {
             Toast.makeText(context?.applicationContext,"Data Structure",Toast.LENGTH_SHORT).show()
         }
 
-        binding.btnOOP.setOnClickListener {
-            startActivity(Intent(context?.applicationContext,OOPActivity::class.java))
-            Toast.makeText(context?.applicationContext,"OOP",Toast.LENGTH_SHORT).show()
-        }
+//        binding.btnOOP.setOnClickListener {
+//            startActivity(Intent(context?.applicationContext,OOPActivity::class.java))
+//            Toast.makeText(context?.applicationContext,"OOP",Toast.LENGTH_SHORT).show()
+//        }
 
         return binding.root
     }

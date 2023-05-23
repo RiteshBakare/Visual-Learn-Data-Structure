@@ -10,43 +10,131 @@
         android:layout_height="match_parent"
 
         >
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvDataTypes"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Data Types"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvVariables"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Variables"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvConditionals"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Conditionals"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvLoops"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Loops"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvFunction"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Function"-->
+<!--                />-->
+<!--            <TextView-->
+<!--                android:id="@+id/tvSwitch"-->
+<!--                style="@style/DemoTextStyle"-->
+<!--                android:text="Switch "-->
+<!--                />-->
+<!--        </LinearLayout>-->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             >
 
-            <TextView
-                android:id="@+id/tvDataTypes"
-                style="@style/DemoTextStyle"
-                android:text="Data Types"
-                />
-            <TextView
-                android:id="@+id/tvVariables"
-                style="@style/DemoTextStyle"
-                android:text="Variables"
-                />
-            <TextView
-                android:id="@+id/tvConditionals"
-                style="@style/DemoTextStyle"
-                android:text="Conditionals"
-                />
-            <TextView
-                android:id="@+id/tvLoops"
-                style="@style/DemoTextStyle"
-                android:text="Loops"
-                />
-            <TextView
-                android:id="@+id/tvFunction"
-                style="@style/DemoTextStyle"
-                android:text="Function"
-                />
-            <TextView
-                android:id="@+id/tvSwitch"
-                style="@style/DemoTextStyle"
-                android:text="Switch "
-                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+
+                <ImageView
+                    android:id="@+id/tvDataTypes"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/data_types_card"
+                    android:layout_margin="10dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/tvVariables"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/variables_card"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <ImageView
+                    android:id="@+id/tvConditionals"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/conditionals_card"
+                    android:layout_margin="10dp"
+                    />
+                <ImageView
+                    android:id="@+id/tvLoops"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/loops_card"
+                    android:layout_margin="10dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                >
+                <ImageView
+                    android:id="@+id/tvFunction"
+                    android:layout_width="0dp"
+                    android:layout_height="195dp"
+                    android:layout_weight="0.4"
+                    android:src="@drawable/functions_card"
+                    android:layout_margin="10dp"
+                    />
+<!--                <ImageView-->
+<!--                    android:id="@+id/tvSwitch"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="195dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:src="@drawable/switch_case_card"-->
+<!--                    android:layout_margin="10dp"-->
+<!--                    />-->
+            </LinearLayout>
+
         </LinearLayout>
+
     </ScrollView>
 
 </FrameLayout>
