@@ -31,9 +31,9 @@ class HomeActivity : AppCompatActivity() {
                 R.id.navCode -> {
                     replaceFragment(CodeFragment())
                 }
-                R.id.navNotes -> {
-                    replaceFragment(NotesFragment())
-                }
+//                R.id.navNotes -> {
+//                    replaceFragment(NotesFragment())
+//                }
                 else -> {
                     Log.e("Fragments","Error")
                 }

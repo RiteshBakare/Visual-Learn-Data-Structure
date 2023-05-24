@@ -13,10 +13,10 @@
         android:icon="@drawable/baseline_code_24"
         />
 
-    <item
-        android:id="@+id/navNotes"
-        android:title="Notes"
-        android:icon="@drawable/baseline_notes_24"
-        />
+<!--    <item-->
+<!--        android:id="@+id/navNotes"-->
+<!--        android:title="Notes"-->
+<!--        android:icon="@drawable/baseline_notes_24"-->
+<!--        />-->
 
 </menu>

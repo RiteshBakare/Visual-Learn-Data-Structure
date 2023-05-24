@@ -12,4 +12,7 @@
     <color name="blue">#87D6E5</color>
     <color name="dark_blue">#0077b6</color>
 
+    <color name="loop">#CAF0F8</color>
+    <color name="looptext">#0E1449</color>
+
 </resources>

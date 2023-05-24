@@ -131,10 +131,49 @@
     </string>
 
     <string name="variables">
+        ## What are Variables? \n \n
+        Variables are the names you give to computer memory locations which are used to store values in a computer program.\n \n
+        For example, assume you want to store two values 10 and 20 in your program and at a later stage, you want to use these two values. Let\'s see how you will do it. Here are the following three simple steps −\n \n
+        -   Create variables with appropriate names.\n \n
+        -   Store your values in those two variables.\n \n
+        -   Retrieve and use the stored values from the variables.\n \n
+        ## Creating variables\n \n
+        Creating variables is also called  *declaring variables*. Different programming languages have different ways of creating variables inside a program. \n \n
+        -   A variable name can hold a single type of value. For example, if variable  *a*  has been defined  *int*  type, then it can store only integer.\n \n
+        -   C programming language requires a variable creation, i.e., declaration before its usage in your program. You cannot use a variable name in your program without creating it, though programming language like Python allows you to use a variable name without creating it.\n \n
+        -   You can use a variable name only once inside your program. For example, if a variable  *a*  has been defined to store an integer value, then you cannot define  *a*  again to store any other type of value.\n \n
+        -   There are programming languages like Python, PHP, Perl, etc., which do not want you to specify data type at the time of creating variables. So you can store integer, float, or long without specifying their data type.\n \n
+        -   You can give any name to a variable like  *age,  **sex,  **salary,  **year1990*  or anything else you like to give, but most of the programming languages allow to use only limited characters in their variables names. For now, we will suggest to use only  *a....z, A....Z, 0....9*  in your variable names and start their names using alphabets only instead of digits.\n \n
+        -   Almost none of the programming languages allow to start their variable names with a digit, so  *1990year*  will not be a valid variable name whereas  *year1990*  or  *ye1990ar*  are valid variable names.\n \n
+        Every programming language provides more rules related to variables and you will learn them when you will go in further detail of that programming language.
+
 
     </string>
 
     <string name="conditionals_info">
+        Definition: Conditionals take an expression, which is code that evaluates to
+        determine a value, and checks if it is true or false. If the expression results in true,
+        the program can be instructed to do one thing — false can even be accounted for to
+        perform another set of instruction(s).\n \n
+        ● If Statement: An if statement is used to test an expression for truth.\n\n
+        If the condition evaluates to true, then the code within the block is executed;
+        otherwise, it will be skipped.\n\n
+        <br>if (20 > 18) {\n\n
+            \t\tcout &lt;&lt;"20 is greater than 18";\n\n
+        }\n\n</br>\n\n
+        ● Else Statement: An else clause can be added to an if statement:\n \n
+        1. If the condition evauates to true, code in the if part is executed.\n \n
+        2. If the condition evaluates to false, code in the else part is executed.\n \n
+        ● Else- if Statement:One or more else if statements can be added in between the if
+        and else to provide additional condition(s) to check.\n \n
+        int time = 22;\n \n
+        if (time &lt; 10) {\n \n
+            \t\tcout &lt;&lt; "Good morning.";\n \n
+        } else if (time &lt; 20) {\n \n
+            \t\tcout &lt;&lt; "Good day.";\n \n
+        } else {\n \n
+            \t\tcout &lt;&lt; "Good Evening";\n \n
+        }\n \n
 
     </string>
 
@@ -171,8 +210,6 @@
         ⦿ Functions can be declared within other functions, which allows for the creation of more complex programs.\n
     </string>
 
-    <string name="switch_info">
 
-    </string>
 
 </resources>

@@ -57,9 +57,9 @@ class BasicSyntaxInfo : Fragment() {
         else if (BasicSyntaxList.function == topic) {
             binding.tvContain.setText(R.string.function_info)
         }
-        else if (BasicSyntaxList.switch == topic) {
-            binding.tvContain.setText(R.string.switch_info);
-        }
+//        else if (BasicSyntaxList.switch == topic) {
+//            binding.tvContain.setText(R.string.switch_info);
+//        }
     }
 
     private fun navigateToNextScreen() {
