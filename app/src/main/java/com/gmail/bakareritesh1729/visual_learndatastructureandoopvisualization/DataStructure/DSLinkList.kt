@@ -65,10 +65,10 @@ class DSLinkList : Fragment() {
         addNodeBtn = view.findViewById<MaterialButton>(R.id.addNode)
         delNodeBtn = view.findViewById<MaterialButton>(R.id.delNode)
 
-        val btnNew = view.findViewById<Button>(R.id.btnNew)
-        btnNew.setOnClickListener {
-            findNavController().navigate(R.id.action_DSLinkList_to_DSLinkListUpdate)
-        }
+//        val btnNew = view.findViewById<Button>(R.id.btnNew)
+//        btnNew.setOnClickListener {
+//            findNavController().navigate(R.id.action_DSLinkList_to_DSLinkListUpdate)
+//        }
 
         addNodeBtn.setOnClickListener {
             addNode()
