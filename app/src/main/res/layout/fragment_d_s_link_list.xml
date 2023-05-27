@@ -146,5 +146,15 @@
         app:layout_constraintStart_toStartOf="@+id/node_e"
         tools:visibility="visible" />
 
+    <Button
+        android:id="@+id/btnNew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="Next Screen"
+        android:backgroundTint="@color/dark_blue"
+        android:layout_margin="10dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

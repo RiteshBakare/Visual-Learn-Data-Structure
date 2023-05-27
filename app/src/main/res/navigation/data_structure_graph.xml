@@ -50,7 +50,11 @@
         android:id="@+id/DSLinkList"
         android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSLinkList"
         android:label="fragment_d_s_link_list"
-        tools:layout="@layout/fragment_d_s_link_list" />
+        tools:layout="@layout/fragment_d_s_link_list" >
+        <action
+            android:id="@+id/action_DSLinkList_to_DSLinkListUpdate"
+            app:destination="@id/DSLinkListUpdate" />
+    </fragment>
     <fragment
         android:id="@+id/DSStack"
         android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSStack"
@@ -71,4 +75,9 @@
         android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DataStructure.DSGraph"
         android:label="fragment_d_s_graph"
         tools:layout="@layout/fragment_d_s_graph" />
+    <fragment
+        android:id="@+id/DSLinkListUpdate"
+        android:name="com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.DSLinkListUpdate"
+        android:label="fragment_d_s_link_list_update"
+        tools:layout="@layout/fragment_d_s_link_list_update" />
 </navigation>

@@ -7,9 +7,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
+import androidx.navigation.fragment.findNavController
 import com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.R
 import com.gmail.bakareritesh1729.visual_learndatastructureandoopvisualization.databinding.FragmentDSLinkListBinding
 import com.google.android.material.button.MaterialButton
@@ -37,6 +39,7 @@ class DSLinkList : Fragment() {
 
     lateinit var layout: ConstraintLayout
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -62,7 +65,10 @@ class DSLinkList : Fragment() {
         addNodeBtn = view.findViewById<MaterialButton>(R.id.addNode)
         delNodeBtn = view.findViewById<MaterialButton>(R.id.delNode)
 
-
+        val btnNew = view.findViewById<Button>(R.id.btnNew)
+        btnNew.setOnClickListener {
+            findNavController().navigate(R.id.action_DSLinkList_to_DSLinkListUpdate)
+        }
 
         addNodeBtn.setOnClickListener {
             addNode()
