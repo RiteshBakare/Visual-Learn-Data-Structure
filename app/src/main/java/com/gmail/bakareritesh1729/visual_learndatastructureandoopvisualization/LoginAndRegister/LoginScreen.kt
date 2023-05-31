@@ -47,6 +47,7 @@ class LoginScreen : Fragment() {
         }
 
         // Sign in user
+
         binding.btnSignIn.setOnClickListener {
 
             if (validateCredentials()) {
